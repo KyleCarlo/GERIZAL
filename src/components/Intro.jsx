@@ -1,5 +1,7 @@
 import UST from "/UST.png";
 import ATENEO from "/ATENEO.png";
+import Condition from "/Condition.png";
+import Rizal from "/Rizal.png";
 
 export default function Intro() {
   return (
@@ -13,18 +15,15 @@ export default function Intro() {
           Century.
         </p>
         <div className="m-8">
-          <h2 className="font-bold text-[1.5rem]">
-            Colonial Influence and Religious Power
-          </h2>
           <div className="flex mt-4">
-            <div className="flex flex-col items-center basis-1/2 relative pr-10">
+            <div className="flex flex-col justify-center items-center basis-1/2 relative pr-10">
               <img src={UST} alt="UST" />
-              <p className="italic font-[PlayfairDisplay] absolute top-15 text-black text-[1.2rem]">
-                University of Sto. Tomas, 1611
-              </p>
             </div>
             <div className="flex flex-col basis-1/2 justify-center pr-10 pb-10">
               <ul className="space-y-8 text-justify">
+                <h2 className="font-bold text-[1.5rem] text-end">
+                  Colonial Influence and Religious Power
+                </h2>
                 <li>
                   During the 19th century, education in the Philippines operated
                   under heavy religious and colonial control. Spanish friars ran
@@ -53,23 +52,23 @@ export default function Intro() {
               </ul>
             </div>
           </div>
-          <div className="flex justify-center text-[1.2rem]">
-            <p className="text-center max-w-[70%] my-7">
+          <div className="flex justify-center text-[1.1rem]">
+            <p className="text-center max-w-[60%] my-7">
               This created a system where education was more about{" "}
               <strong>reinforcing colonial power and religious values</strong>{" "}
               than developing critical or practical skills.
             </p>
           </div>
-          <h2 className="font-bold text-[1.5rem]">Language as a Barrier</h2>
+
           <div className="flex flex-row-reverse">
             <div className="flex flex-col items-center basis-1/2 relative pl-10 bottom-10">
               <img src={ATENEO} alt="ATENEO" />
-              <p className="italic font-[PlayfairDisplay] absolute top-15 text-black text-[1.2rem]">
-                Ateneo de Manila, 1859
-              </p>
             </div>
             <div className="flex flex-col basis-1/2 justify-center pl-10 relative">
-              <ul className="space-y-14 text-justify pb-15">
+              <ul className="space-y-8 text-justify pb-15">
+                <h2 className="font-bold text-[1.5rem]">
+                  Language as a Barrier
+                </h2>
                 <li>
                   Education was delivered <strong>in Spanish</strong>, a
                   language most native Filipinos didn't speak. No effort was
@@ -87,11 +86,11 @@ export default function Intro() {
               </ul>
             </div>
           </div>
-          <h2 className="font-bold text-[1.5rem] mt-[-15px] mb-6">
+          <h2 className="font-bold text-[1.5rem] mt-[-15px] mb-6 text-center">
             Who Got Educated—and Who Didn't
           </h2>
-          <div className="flex gap-15">
-            <ul className="space-y-2 text-justify">
+          <div className="flex gap-15 px-10">
+            <ul className="space-y-2 text-justify basis-1/2">
               <li>Access to education was highly unequal.</li>
               <li>
                 <ul className="list-disc list-inside space-y-2">
@@ -110,8 +109,8 @@ export default function Intro() {
                 </ul>
               </li>
             </ul>
-            <ul className="space-y-2 text-justify">
-              <li>Even those who reached higher education faced limits:</li>
+            <ul className="space-y-2 text-justify basis-1/2">
+              <li>Even those who reached higher education faced limits.</li>
               <li>
                 <ul className="list-disc list-inside space-y-2">
                   <li>
@@ -126,13 +125,89 @@ export default function Intro() {
               </li>
             </ul>
           </div>
-          <div className="flex justify-center text-center my-7">
+          <div className="flex justify-center text-center my-7 text-[1.1rem]">
             <p className="max-w-[70%]">
               This approach favored{" "}
               <strong>rote memorization over critical thinking</strong>,
               creating educated Filipinos who couldn't challenge the system that
               controlled them.
             </p>
+          </div>
+
+          <div className="flex items-center">
+            <div className="flex flex-col justify-center items-center basis-1/2 relative pr-10 w-1/2">
+              <img
+                src={Condition}
+                alt="Condition of 19th Century Education"
+                className=" max-h-[500px]"
+              />
+            </div>
+            <div className="basis-1/2 space-y-8 pr-10">
+              <h2 className="basis-1/2 font-bold text-[1.5rem] text-end">
+                Infrastructure and Teaching Conditions
+              </h2>
+              <p className="text-justify">
+                Outside a few city schools, the overall system was
+                underdeveloped:
+              </p>
+              <ul className="space-y-4 list-disc list-inside text-justify">
+                <li>
+                  Many classrooms were makeshift and lacked furniture or
+                  blackboards.
+                </li>
+                <li>Teachers often weren't professionally trained.</li>
+                <li>
+                  Textbooks and learning materials were scarce, outdated, or
+                  entirely absent.
+                </li>
+              </ul>
+              <p className="text-justify">
+                In many places, what passed for a school was just a room inside
+                a convent or house. Most Filipinos never received even a{" "}
+                <strong>basic primary education</strong>. Illiteracy remained
+                high, especially in rural areas.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-row-reverse items-center">
+            <div className="basis-1/2 h-[300px] flex justify-center">
+              <img src={Rizal} alt="J.Rizal" className="scale-x-[-1] h-full" />
+            </div>
+            <div className="basis-1/2">
+              <div className="flex justify-center">
+                <ul className="space-y-8 text-justify pl-10">
+                  <h2 className="font-bold text-[1.5rem] my-8">
+                    Seeds of Resistance
+                  </h2>
+                  <li>
+                    This broken education system eventually created its own
+                    opposition.
+                  </li>
+                  <li>
+                    Nationalist figures like <strong>Jose Rizal</strong> saw
+                    education as a tool for empowerment, not oppression.
+                  </li>
+                  <li>
+                    Rizal's writings called out the{" "}
+                    <strong>backwardness and inequality</strong> in Spanish-run
+                    schools.
+                  </li>
+                  <li>
+                    Reformers demanded a system that taught in the{" "}
+                    <strong>native language</strong>, served the{" "}
+                    <strong>whole population</strong>, and encouraged{" "}
+                    <strong>scientific thinking and national pride</strong>.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="italic font-bold text-[1.5rem] text-center my-8 font-[PlayfairDisplay]">
+              Section Summary
+            </h2>
           </div>
         </div>
       </div>
