@@ -3,9 +3,9 @@ import ATENEO from "/ATENEO.png";
 import Condition from "/Condition.png";
 import Rizal from "/Rizal.png";
 
-export default function Section1() {
+export default function Section1({ ref }) {
   return (
-    <div className="m-8">
+    <div className="m-8" ref={ref}>
       <h1 className="font-[PlayfairDisplay] text-[2rem] tracking-wide">
         19th-Century Philippine Education: A System Under Control
       </h1>

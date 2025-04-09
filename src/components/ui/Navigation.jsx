@@ -12,7 +12,7 @@ const sections = [
   { title: "Implications", num: "IV", id: 3 },
 ];
 
-export default function Navigation() {
+export default function Navigation({ sectionRefs }) {
   const [active, setActive] = useState(0);
 
   return (
@@ -23,7 +23,7 @@ export default function Navigation() {
       <div className="flex-1 flex justify-evenly items-center w-[150px] relative top-[-15px]">
         {/* SEC NUM */}
         <ul className="h-full flex flex-col justify-evenly text-end ml-4">
-          {sections.map((section) => {
+          {sections.map((section, index) => {
             return (
               <>
                 <motion.li
@@ -39,7 +39,14 @@ export default function Navigation() {
                     fontWeight: active == section.id ? "bold" : "normal",
                   }}
                   className="cursor-pointer"
-                  onClick={() => setActive(section.id)}
+                  onClick={() => {
+                    setActive(section.id);
+                    sectionRefs[index].current.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                      inline: "nearest",
+                    });
+                  }}
                 >
                   {section.num}
                 </motion.li>

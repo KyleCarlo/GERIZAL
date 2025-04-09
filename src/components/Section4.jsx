@@ -173,9 +173,9 @@ const policies = [
   },
 ];
 
-export default function Section4() {
+export default function Section4({ ref }) {
   return (
-    <div className="m-8 space-y-8">
+    <div className="m-8 space-y-8" ref={ref}>
       <div>
         <h1 className="font-[PlayfairDisplay] text-[2rem] tracking-wide">
           Rizal's Legacy in Education: Shaping Modern Filipino Nationalisms

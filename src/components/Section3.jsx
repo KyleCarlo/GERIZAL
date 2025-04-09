@@ -111,9 +111,9 @@ const dis_adv = [
   },
 ];
 
-export default function Section3() {
+export default function Section3({ ref }) {
   return (
-    <div className="m-8 space-y-8">
+    <div className="m-8 space-y-8" ref={ref}>
       <div>
         <h1 className="font-[PlayfairDisplay] text-[2rem] tracking-wide">
           If Rizal Returned: A Reflection on Modern Education

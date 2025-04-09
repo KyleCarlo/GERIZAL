@@ -53,9 +53,9 @@ const literary_works = [
   },
 ];
 
-export default function Section2() {
+export default function Section2({ ref }) {
   return (
-    <div className="m-8 space-y-8">
+    <div className="m-8 space-y-8" ref={ref}>
       <div>
         <h1 className="font-[PlayfairDisplay] text-[2rem] tracking-wide">
           Education as a Tool for Nationalism: Rizal's Vision for the Filipino
