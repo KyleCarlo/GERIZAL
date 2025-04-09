@@ -17,6 +17,7 @@ export default function App() {
         <Section3 />
         <SectionDiv />
         <Section4 />
+        <SectionDiv />
       </div>
     </div>
   );
