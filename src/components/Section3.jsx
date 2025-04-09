@@ -1,35 +1,112 @@
 import SadRizal from "/sad_rizal.png";
 import HappyRizal from "/happy_rizal.png";
 import DividedLists from "./ui/DividedLists";
+import { Good, Bad } from "./ui/Highlights";
 
 const dis_adv = [
   {
     title: "Based on the Motivation for Nationalism in Education",
     adv: [
-      "the contemporary efforts to emphasize Filipino identity in education, such as the inclusion of Philippine history and his own writings in school curricula, mandated by Republic Act No. 1425.",
-      "the subjects like Araling Panlipunan and Filipino Values Education that have been instrumental in fostering historical awareness and cultural consciousness among students, in which he would appreciate. The Araling Panlipunan curriculum aims to cultivate historical awareness and cultural consciousness by teaching students about local history, values of unity, and tolerance through emphasis in strengthening Filipino identity and promoting responsible citizenship through understanding historical and social issues.",
+      <>
+        the contemporary efforts to emphasize Filipino identity in education,
+        such as the inclusion of Philippine history and his own writings in
+        school curricula, mandated by <Good>Republic Act No. 1425</Good>.
+      </>,
+      <>
+        the subjects like{" "}
+        <Good>
+          Araling Panlipunan and Filipino Values Education that have been
+          instrumental in fostering historical awareness and cultural
+          consciousness among students, in which he would appreciate
+        </Good>
+        . The Araling Panlipunan curriculum aims to cultivate historical
+        awareness and cultural consciousness by teaching students about local
+        history, values of unity, and tolerance through emphasis in
+        strengthening Filipino identity and promoting responsible citizenship
+        through understanding historical and social issues.
+      </>,
     ],
     dis: [
-      "the persistent inequalities limiting educational access in remote provinces and marginalized urban areas. Schools in these regions often face overcrowding, insufficient teaching materials, and a lack of trained educators. The rural-urban education inequality gap is a major contributor to overall education inequality, while within provinces, the primary issue is inequality in rural areas. This underscores the need for improved educational provision in rural areas. Notably, Tawi-Tawi is the only province that has seen an increase in both rural and urban educational inequalities.",
-      "the educational disparities, seeing them as modern manifestations of the colonial-era discrimination he opposed. He would passionately advocate for equitable educational opportunities to empower marginalized sectors. Although the Philippine education system has made progress through curricular reforms, enduring challenges still impede improvement. Recent initiatives aim to reinforce national identity and cultural heritage by integrating historical perspectives into the curriculum, yet significant gaps in resource allocation and infrastructure persist—especially in rural and marginalized areas. Therefore, a comprehensive reevaluation of policy measures is essential to address these disparities, as equitable educational opportunities are crucial for the nation's development.",
+      <>
+        the{" "}
+        <Bad>
+          persistent inequalities limiting educational access in remote
+          provinces and marginalized urban areas
+        </Bad>
+        . Schools in these regions often face overcrowding, insufficient
+        teaching materials, and a lack of trained educators. The rural-urban
+        education inequality gap is a major contributor to overall education
+        inequality, while within provinces, the primary issue is inequality in
+        rural areas. This underscores the need for improved educational
+        provision in rural areas. Notably, Tawi-Tawi is the only province that
+        has seen an increase in both rural and urban educational inequalities.
+      </>,
+      <>
+        the <Bad>educational disparities</Bad>, seeing them as modern
+        manifestations of the colonial-era discrimination he opposed. He would
+        passionately advocate for equitable educational opportunities to empower
+        marginalized sectors. Although the Philippine education system has made
+        progress through curricular reforms, enduring challenges still impede
+        improvement. Recent initiatives aim to reinforce national identity and
+        cultural heritage by integrating historical perspectives into the
+        curriculum, yet significant gaps in resource allocation and
+        infrastructure persist—especially in rural and marginalized areas.
+        Therefore, a comprehensive reevaluation of policy measures is essential
+        to address these disparities, as equitable educational opportunities are
+        crucial for the nation's development.
+      </>,
     ],
   },
   {
     title: "Based on the Perspective of Education",
     adv: [
-      "the significant progress in public education accessibility due to policies like the Universal Access to Quality Tertiary Education Act (RA 10931), which provides free higher education in state universities and colleges.",
+      <>
+        the significant progress in public education accessibility due to
+        policies like the{" "}
+        <Good>
+          Universal Access to Quality Tertiary Education Act (RA 10931)
+        </Good>
+        , which provides free higher education in state universities and
+        colleges.
+      </>,
     ],
     dis: [
-      "the potential politicization or government propaganda within the education system. Rizal would likely critique instances where curricula might overly align with political agendas or historical narratives that suppress critical thought and autonomy, emphasizing the need for education to encourage independent and analytical thinking rather than passive acceptance. Educational reforms are driven by neoliberal and political agendas, which shaped the educational system. These changes often emphasize market-oriented skills and standardized curricula—measures that can limit opportunities for independent inquiry and critical thought, potentially aligning with concerns about government propaganda influencing classroom instruction.",
+      <>
+        the potential{" "}
+        <Bad>
+          politicization or government propaganda within the education system
+        </Bad>
+        . Rizal would likely critique instances where curricula might overly
+        align with political agendas or historical narratives that suppress
+        critical thought and autonomy, emphasizing the need for education to
+        encourage independent and analytical thinking rather than passive
+        acceptance. Educational reforms are driven by neoliberal and political
+        agendas, which shaped the educational system. These changes often
+        emphasize market-oriented skills and standardized curricula—measures
+        that can limit opportunities for independent inquiry and critical
+        thought, potentially aligning with concerns about government propaganda
+        influencing classroom instruction.
+      </>,
     ],
   },
   {
     title: "Based on the Contributions to Educational Reform",
     adv: [
-      "the educational reforms, such as the K-12 program, recognizing its intent to align Philippine education with international standards and its goal of holistic student development, as well as a step towards accessible quality education.",
+      <>
+        the <Good>educational reforms, such as the K-12 program</Good>,
+        recognizing its intent to align Philippine education with international
+        standards and its goal of holistic student development, as well as a
+        step towards accessible quality education.
+      </>,
     ],
     dis: [
-      "the continued heavy reliance on rote memorization and standardized testing exemplified by high-stakes exams such as the National Achievement Test (NAT), which often limit creativity and discourage genuine intellectual engagement.",
+      <>
+        the continued{" "}
+        <Bad>heavy reliance on rote memorization and standardized testing</Bad>{" "}
+        exemplified by high-stakes exams such as the National Achievement Test
+        (NAT), which often limit creativity and discourage genuine intellectual
+        engagement.
+      </>,
     ],
   },
 ];
