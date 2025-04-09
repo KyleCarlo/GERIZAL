@@ -1,6 +1,7 @@
 import Navigation from "./components/ui/Navigation";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
+import Section3 from "./components/Section3";
 import SectionDiv from "./components/ui/SectionDiv";
 
 export default function App() {
@@ -11,6 +12,9 @@ export default function App() {
         <Section1 />
         <SectionDiv />
         <Section2 />
+        <SectionDiv />
+        <Section3 />
+        <SectionDiv />
       </div>
     </div>
   );
